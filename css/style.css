@@ -1,0 +1,165 @@
+/**
+Estilos Genrales
+*/
+
+:root{
+    --color-primario: black;
+    --text-color-primari:white;
+    --color-secundario: rgb(32, 126, 155);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+header{
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+a{
+    text-decoration: none;
+}
+.cabecera{
+    background-color:var(--color-primario);
+    height: 60px;
+    margin-bottom: 70px;
+    color: var(--text-color-primari);
+}
+.menu{
+    background-color: var(--color-secundario);
+    margin-bottom: 30px;
+
+}
+
+section{
+    width: 35%;
+    margin: auto;
+    border: 1px solid var(--color-secundario);
+    border-radius: 5px;
+}
+h1{
+    
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+.flex{
+    display: flex;
+}
+.aroud{
+    justify-content: space-around;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.content-center{
+    text-align: center;
+}
+.alig-center{
+    align-items: center;
+}
+
+
+.menu li{
+    list-style: none;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    height: 40px;
+    box-sizing: border-box;
+}
+.menu ul{
+    width: 80%;
+    margin: auto;
+}
+.menu li a {
+    color: rgb(228, 228, 228);
+    font-size: 1.3rem;
+}
+.active a{
+    color: rgb(255, 255, 255) !important;
+}
+/*estilos de Fromulario*/
+.form{
+    width: 70%;
+    margin-bottom: 30px;
+}
+.group{
+    width: 90%;
+}
+
+label,input{
+    width: 100%;
+    display: inline-block;
+    margin:5px 0 5px  0;
+    font-family: 'Titillium Web', sans-serif;
+}
+input{
+    box-sizing: border-box;
+    padding: 2px 5px 2px 5px;
+}
+input[type="submit"]{
+    background-color: var(--color-secundario);
+    color: white;
+    margin-top: 30px;
+    font-size: 1.3rem;
+    border: 1px solid var(--color-secundario);
+    border-radius: 3px;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+input:focus{
+    outline: 1px solid var(--color-secundario);
+}
+
+/*estilo para movil*/
+
+@media (max-width:576px){
+    section{
+        width: 90%;
+    }
+    .cabecera{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:768px) and (min-width:569px){
+    section{
+        width: 50%;
+    }
+    .cabecera{
+        margin-bottom: 60px ;
+    }
+}
+
+
+
+/*estilos para mensaje de error*/
+.exito{
+    border: 1px solid rgb(43, 255, 0);
+
+    box-shadow: 0px 0px 5px rgb(43, 255, 0); 
+}
+
+.error{
+    /*border-color:transparent;
+    */
+    border: 1px solid red;
+
+    box-shadow: 0px 0px 5px red;
+
+}
+.mostrartexto p{
+    text-align: center;
+    color: red;
+}
+.hidenE{
+    display: none;
+}
+.hiden{
+    display: none;
+}
